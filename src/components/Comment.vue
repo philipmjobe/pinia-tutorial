@@ -1,3 +1,4 @@
+// eslint-disable-next-line vue/multi-word-component-names
 <script setup>
 defineProps(["comments"]);
 </script>
