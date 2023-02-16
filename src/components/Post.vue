@@ -1,3 +1,4 @@
+// eslint-disable-next-line vue/multi-word-component-names
 <script setup>
 import { RouterLink } from "vue-router";
 import { storeToRefs } from "pinia";
@@ -21,7 +22,7 @@ fetchComments();
         <RouterLink :to="`/author/${author.username}`">{{
           author.name
         }}</RouterLink>
-        <span>Comments: {{ getPostComments.length }}</span>
+        | <span>Comments: {{ getPostComments.length }}</span>
       </p>
       <p>{{ post.body }}</p>
     </div>

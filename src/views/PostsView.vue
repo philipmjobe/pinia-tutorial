@@ -13,11 +13,11 @@ fetchPosts();
   <main>
     <p v-if="loading">Loading posts...</p>
     <p v-if="error">{{ error.message }}</p>
-
-    // eslint-disable-next-line vue/no-use-v-if-with-v-for
     <p v-if="posts" v-for="post in posts" :key="post.id">
       <RouterLink :to="`/post/${post.id}`">{{ post.title }}</RouterLink>
-    <p>{{ post.body }}</p>
+      <p>
+        {{ post.body }}
+      </p>
     </p>
 
   </main>
